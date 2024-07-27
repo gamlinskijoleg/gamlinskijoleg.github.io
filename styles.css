@@ -10,7 +10,7 @@ body {
 
 .window {
   height: 85%;
-  width: 1000px;
+  width: 50vw;
   background: white;
   border-radius: 40px;
   align-self: center;
@@ -39,7 +39,7 @@ body {
 }
 
 #email {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 #password {
