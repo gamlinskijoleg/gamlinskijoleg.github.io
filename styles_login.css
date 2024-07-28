@@ -69,7 +69,7 @@ input:hover {
   cursor: text;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
@@ -178,7 +178,7 @@ button {
 }
 
 #message {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-content: center;
   position: relative;
@@ -196,8 +196,8 @@ button {
   cursor: pointer;
 }
 
-#forgot-password{
-  display:flex;
+#forgot-password {
+  display: flex;
   justify-content: center;
   align-content: center;
   position: relative;

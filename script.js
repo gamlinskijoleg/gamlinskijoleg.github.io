@@ -3,7 +3,7 @@ document.querySelector("#Signup").onclick = function validPassword() {
   const inputPassword = document.querySelector("#password").value;
   const inputConfPassword = document.querySelector("#confirm-password").value;
   var message = document.querySelector("#message");
-  var color = document.querySelector("#message").style; 
+  var color = document.querySelector("#message").style;
   if (inputEmail.includes("@" && ".com") == false) {
     color.color = "red";
     message.innerHTML = "The email isn't valid!";

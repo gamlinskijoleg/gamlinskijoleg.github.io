@@ -45,8 +45,10 @@ body {
   margin-top: 80px;
 }
 
-#password, #confirm-password, #email{
-    margin-top: 3%
+#password,
+#confirm-password,
+#email {
+  margin-top: 3%;
 }
 
 input {
@@ -68,7 +70,7 @@ input:hover {
   cursor: text;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
@@ -176,7 +178,7 @@ button {
 }
 
 #message {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-content: center;
   position: relative;
@@ -186,8 +188,8 @@ button {
 }
 .material-symbols-outlined {
   position: relative;
-left: 88%;
-bottom: 18%;
+  left: 88%;
+  bottom: 18%;
   user-select: none;
 }
 .material-symbols-outlined:hover {
