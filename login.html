@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
+    <title>Login</title>
     <link rel="icon" href="pictures/icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_login.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -14,46 +14,34 @@
   <body>
     <div class="window">
       <div id="wrapper">
-        <div id="Sign">Sign up</div>
+        <div id="Sign">Log in</div>
         <form action="" method="post">
           <div id="inputs-container">
             <input type="email" placeholder="Email" id="email" />
-            <input
-              type="password"
-              placeholder="Create password"
-              id="password"
-            />
-            <input
-              type="password"
-              placeholder="Confirm password"
-              id="confirm-password"
-            />
+            <input type="password" placeholder="Password" id="password" />
             <div class="material-symbols-outlined">visibility</div>
           </div>
-          <p id="message"></p>
+          <p id="message">Test message</p>
+          <div id="forgot-password">
+            <a class="a" href="https://google.com">Forgot password?</a>
+          </div>
         </form>
-        <button id="Signup">Sign up</button>
-        <div id="alr">
-          Already have an account? <a href="login.html" id="a">Log in</a>
+        <button id="Login">Login</button>
+        <div id="dont-have-an-account">
+          Don't have an account? <a href="index.html" class="a">Sign up</a>
         </div>
         <div id="line"></div>
         <div id="Or">Or</div>
         <button id="lwg">
-          <img
-            src="pictures/google.png"
-            width="30"
-            height="30"
-          />Login with Google
+          <img src="pictures/google.png" width="30" height="30" />Login with
+          Google
         </button>
         <button id="lwf">
-          <img
-            src="pictures/facebook.png"
-            width="30"
-            height="30"
-          />Login with Facebook
+          <img src="pictures/facebook.png" width="30" height="30" />Login with
+          Facebook
         </button>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script_login.js"></script>
   </body>
 </html>

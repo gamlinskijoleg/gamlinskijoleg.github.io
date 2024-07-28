@@ -3,15 +3,20 @@ document.querySelector("#Signup").onclick = function validPassword() {
   const inputPassword = document.querySelector("#password").value;
   const inputConfPassword = document.querySelector("#confirm-password").value;
   var message = document.querySelector("#message");
+  var color = document.querySelector("#message").style; 
   if (inputEmail.includes("@" && ".com") == false) {
+    color.color = "red";
     message.innerHTML = "The email isn't valid!";
   } else {
     if (inputPassword == "" || inputConfPassword == "") {
+      color.color = "red";
       message.innerHTML = "Your password is empty!";
     } else {
       if (inputConfPassword == inputPassword) {
+        color.color = "red";
         message.innerHTML = "Succesfuly signed up.";
       } else {
+        color.color = "red";
         message.innerHTML = "Your passwords don't match!";
       }
     }

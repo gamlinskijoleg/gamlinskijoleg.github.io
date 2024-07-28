@@ -45,8 +45,9 @@ body {
   margin-top: 80px;
 }
 
-#password, #confirm-password, #email{
-    margin-top: 3%
+#password,
+#email {
+  margin-top: 3%;
 }
 
 input {
@@ -68,7 +69,7 @@ input:hover {
   cursor: text;
 }
 
-#Signup {
+#Login {
   background-color: rgb(30, 101, 255);
   margin-left: 10%;
   width: 80%;
@@ -88,7 +89,7 @@ form {
   height: 280px;
 }
 
-#alr {
+#dont-have-an-account {
   color: rgb(84, 84, 84);
   position: fixed;
   top: 63%;
@@ -97,12 +98,13 @@ form {
   user-select: none;
 }
 
-#a {
+.a {
   text-decoration: none;
   color: cornflowerblue;
+  user-select: none;
 }
 
-#a:visited {
+.a:visited {
   text-decoration: none;
   color: cornflowerblue;
 }
@@ -177,15 +179,23 @@ button {
   align-content: center;
   position: relative;
   color: white;
-  bottom: 19px;
+  bottom: 55px;
   user-select: none;
 }
 .material-symbols-outlined {
   position: relative;
-left: 88%;
-bottom: 18%;
+  left: 88%;
+  bottom: 18%;
   user-select: none;
 }
 .material-symbols-outlined:hover {
   cursor: pointer;
+}
+
+#forgot-password{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  bottom: 40px;
 }
