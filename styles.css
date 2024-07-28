@@ -8,8 +8,8 @@ body {
 }
 
 .window {
-  height: 85vh;
-  width: 30vw;
+  height: 85%;
+  width: 300px;
   background: white;
   border-radius: 40px;
   align-self: center;
@@ -29,7 +29,7 @@ body {
   color: black;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 30px;
+  font-size: 100%;
   font-weight: 500;
   position: fixed;
   align-self: center;
@@ -62,6 +62,7 @@ input::placeholder {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
+  font-size: 100%;
 }
 input:hover {
   cursor: text;
@@ -171,12 +172,10 @@ button {
 }
 
 #message {
+  position:fixed;
   color: red;
-  position: fixed;
-  align-self: center;
-  justify-self: center;
-  bottom: 255px;
-  user-select: none;
+  left: 90px;
+  bottom: 50.5%;
 }
 .material-symbols-outlined {
   position: relative;
