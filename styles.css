@@ -68,6 +68,10 @@ input:hover {
   cursor: text;
 }
 
+input:focus{
+  outline: none;
+}
+
 #Signup {
   background-color: rgb(30, 101, 255);
   margin-left: 10%;
