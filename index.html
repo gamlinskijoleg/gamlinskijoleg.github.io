@@ -3,32 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEBFORM</title>
+    <title>Simple web form</title>
     <link rel="icon" href="icon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <div class="window">
       <div id="wrapper">
         <div id="Sign">Sign up</div>
         <form action="" method="post">
-          <input type="email" placeholder="Email" id="email" />
-          <input type="password" placeholder="Create password" id="password" />
-          <input
-            type="password"
-            placeholder="Confirm password"
-            id="confirm-password"
-          />
+          <div id="inputs-container">
+            <input type="email" placeholder="Email" id="email" />
+            <input
+              type="password"
+              placeholder="Create password"
+              id="password"
+            />
+            <input
+              type="password"
+              placeholder="Confirm password"
+              id="confirm-password"
+            />
+            <div class="material-symbols-outlined">visibility</div>
+          </div>
         </form>
+        <p id="message"></p>
         <button id="Signup">Sign up</button>
         <div id="alr">
           Already have an account? <a href="https://google.com" id="a">Login</a>
         </div>
         <div id="line"></div>
         <div id="Or">Or</div>
-        <button id="lwg"><img src="free-google-2296064-1912023.png" width="30" height="30">Login with Google</button>
-        <button id="lwf"><img src="facebook-removebg-preview.png" width="30" height="30">Login with Facebook</button>
+        <button id="lwg">
+          <img
+            src="free-google-2296064-1912023.png"
+            width="30"
+            height="30"
+          />Login with Google
+        </button>
+        <button id="lwf">
+          <img
+            src="facebook-removebg-preview.png"
+            width="30"
+            height="30"
+          />Login with Facebook
+        </button>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

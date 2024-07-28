@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-
 }
 
 body {
@@ -34,27 +33,25 @@ body {
   font-weight: 500;
   position: fixed;
   align-self: center;
-  justify-self:center ;
+  justify-self: center;
   top: 5%;
   user-select: none;
 }
 
-#email {
+#inputs-container {
+  width: 80%;
+  height: 60%;
+  margin-left: 10%;
   margin-top: 80px;
 }
 
-#password {
-  margin-top: 3%;
-}
-
-#confirm-password {
-  margin-top: 3%;
+#password, #confirm-password, #email{
+    margin-top: 3%
 }
 
 input {
-  margin-left: 10%;
-  width: 76%;
-  height: 14%;
+  width: 96%;
+  height: 22%;
   border-radius: 4px;
   border: 1px solid gray;
   padding-left: 4%;
@@ -101,12 +98,12 @@ form {
 
 #a {
   text-decoration: none;
-  color:cornflowerblue;
+  color: cornflowerblue;
 }
 
-#a:visited{
-    text-decoration: none;
-    color:cornflowerblue ;
+#a:visited {
+  text-decoration: none;
+  color: cornflowerblue;
 }
 
 #line {
@@ -173,3 +170,20 @@ button {
   user-select: none;
 }
 
+#message {
+  color: red;
+  position: fixed;
+  align-self: center;
+  justify-self: center;
+  bottom: 255px;
+  user-select: none;
+}
+.material-symbols-outlined {
+  position: relative;
+left: 88%;
+bottom: 18%;
+  user-select: none;
+}
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
