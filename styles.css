@@ -103,4 +103,5 @@ body {
   border-radius: 8px;
   box-shadow: rgba(180, 0, 180, 0.2) 0 15px 30px -5px;
   transition: 0.3s;
+  user-select: none;
 }
