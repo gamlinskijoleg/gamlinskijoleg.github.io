@@ -1,6 +1,6 @@
 const butt = document.getElementById("button");
 const scorecontainer = document.getElementById("scorecontainer");
-let counter = 90;
+let counter = 0;
 
 butt.onclick = function () {
     if (counter < 100) {
@@ -14,7 +14,7 @@ butt.onclick = function () {
             alert("Вже половина!");
         } else if (counter == 100) {
             scorecontainer.innerHTML = "Успішно. Видаю приз...";
-            window.location.href = "https://google.com";
+            window.location.href = "gamlinskijoleg.github.io/prize";
         }
     }
 };
