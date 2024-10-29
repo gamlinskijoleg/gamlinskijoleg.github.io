@@ -14,7 +14,7 @@ butt.onclick = function () {
             alert("Вже половина!");
         } else if (counter == 100) {
             scorecontainer.innerHTML = "Успішно. Видаю приз...";
-            window.location.href = "https://gamlinskijoleg.github.io/prize/index.html";
+            window.location.replace("https://gamlinskijoleg.github.io/prize/index.html");
         }
     }
 };
