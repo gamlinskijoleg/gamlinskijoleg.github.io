@@ -16,9 +16,11 @@ body {
     justify-self: center;
     align-self: center;
     border-radius: 50px;
+    user-select: none;
 }
 
 #congratulations{
+    user-select: none;
     display: flex;
     justify-content: center;
     background-color: #ffffff;
