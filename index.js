@@ -8,11 +8,7 @@ butt.onclick = function () {
         counter++;
 
         scorecontainer.innerHTML = "Ви натиснули: " + counter + " разів";
-        if (counter == 10) {
-            alert("Так тримати!");
-        } else if (counter == 50) {
-            alert("Вже половина!");
-        } else if (counter == 100) {
+        if (counter == 100) {
             scorecontainer.innerHTML = "Успішно. Видаю приз...";
             window.location.replace("https://gamlinskijoleg.github.io/prize/index.html");
         }
