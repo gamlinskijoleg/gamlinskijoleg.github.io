@@ -1,0 +1,37 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffff3;
+}
+
+#lyashko {
+    display: flex;
+    margin-top: calc(10vw/2);
+    max-width: 90vw;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50px;
+}
+
+#congratulations{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    color: darkgray;
+    max-width: 90%;
+    text-wrap: nowrap;
+    height: 2em;
+    align-items: center;
+    border-radius: 1em;
+    margin-top: 30px;
+    padding: 20px;
+    justify-self: center;
+    box-shadow: rgba(180, 180, 180, 0.9) 0 15px 30px -5px;
+    font-size: 16px;
+    font-family: Phantomsans, sans-serif;
+}
+
