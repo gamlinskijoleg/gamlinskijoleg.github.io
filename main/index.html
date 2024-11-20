@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Дай очам відпочити!</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" href="../misc/images/eyes/icon.png" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <div id="grid">
+            <div id="circle"></div>
+            <div id="counter">20</div>
+        </div>
+        <nav id="nav">
+            <div id="change-language-button">
+                <span class="material-symbols-outlined"> language </span>
+            </div>
+            <div id="change-sound-button">
+                <span class="material-symbols-outlined" id="sound-pic">music_note</span>
+                <div id="sounds-list">
+                    <li id="sound-1"><span class="material-symbols-outlined">music_note</span></li>
+                    <li id="sound-2"><span class="material-symbols-outlined">piano</span></li>
+                    <li id="sound-3"><span class="material-symbols-outlined">speaker</span></li>
+                    <li id="sound-4"><span class="material-symbols-outlined">music_off</span></li>
+                </div>
+            </div>
+            <div id="change-volume">
+                <span class="material-symbols-outlined" id="sound-volume">volume_up</span>
+                <div id="soundrange-container">
+                    <input type="range" min="0" max="10" value="10" step="1" id="sound-range" />
+                </div>
+            </div>
+        </nav>
+        <div id="img"><img src="/misc/images/eyes/row-1-column-1.png" /></div>
+        <button id="starting-button">Розпочати заняття</button>
+        <div id="recomendations">Рекомендації</div>
+        <div id="popup-box">Знайди собі окуліста</div>
+        <div id="text-container">
+            <div id="header"></div>
+            <div id="main-text">
+                <p id="first-p">В комплексі набір вправ, під час яких потрібно дивитися у напрямку, який показує кружечок.</p>
+                <p id="second-p">Білий кружечок вказує тільки напрямок - погляд відводьте максимально, але щоб не було напруги в очах.</p>
+                <p id="third-p">У крайніх точках затримуйте погляд на секунду.</p>
+                <p id="fourth-p">Після виконання кожної вправи, за бажанням, легко замружитись або покліпати декілька секунд - це допоможе розслабити очі.</p>
+                <div id="wrapper">
+                    <input type="checkbox" id="checkbox" />
+                    <label id="label" for="checkbox">Більше не показувати</label>
+                    <button id="key-button">Почати</button>
+                </div>
+            </div>
+        </div>
+        <footer><div id="footer-text">tg: @vorona_with_red_eyes</div></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
