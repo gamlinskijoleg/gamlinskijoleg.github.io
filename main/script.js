@@ -19,7 +19,6 @@ const soundRange = document.getElementById("sound-range");
 const recommendations = document.getElementById("recomendations");
 const popupBox = document.getElementById("popup-box");
 
-
 let currentVolume = 10;
 var audio1 = new Audio("/misc/sounds/sound1.mp3");
 let audio2 = new Audio("/misc/sounds/sound2.mp3");
@@ -36,33 +35,6 @@ let currentCounter = 20;
 let currentSoundMenuOpen = false;
 let currentAudio = audio1;
 
-let all1 = document.querySelectorAll("body *:not(#sound-pic):not(#change-sound-button):not(#sounds-list):not(li):not(#nav)");
-let all2 = document.querySelectorAll("body *:not(#soundrange-container):not(#nav):not(#sound-volume):not(input)");
-
-all1.forEach((element) => {
-    element.onclick = function () {
-        if (currentSoundMenuOpen == true) {
-            soundsList.style.opacity = "0";
-            currentSoundMenuOpen = false;
-            setTimeout(() => {
-                soundsList.style.display = "none";
-            }, 300);
-        }
-    };
-});
-
-all2.forEach((element) => {
-    element.onclick = function () {
-        if (currentVolumeMenuOpen == true) {
-            volumesContainer.style.opacity = "0";
-            currentVolumeMenuOpen = false;
-            setTimeout(() => {
-                volumesContainer.style.display = "none";
-            }, 300);
-        }
-    };
-});
-
 recommendations.onclick = function () {
     popupBox.style.display = "flex";
     setTimeout(() => {
@@ -76,10 +48,29 @@ recommendations.onclick = function () {
     }, 3000);
 };
 
-checkbox.onchange = function () {
-    IsDoNotShowAgain = checkbox.checked;
-    localStorage.setItem("IsDoNotShowAgain", IsDoNotShowAgain);
-};
+document.querySelectorAll("body *:not(#sound-pic):not(#change-sound-button):not(#sounds-list):not(li):not(#nav)").forEach((element) => {
+    element.onclick = function () {
+        if (currentSoundMenuOpen == true) {
+            soundsList.style.opacity = "0";
+            currentSoundMenuOpen = false;
+            setTimeout(() => {
+                soundsList.style.display = "none";
+            }, 300);
+        }
+    };
+});
+
+document.querySelectorAll("body *:not(#soundrange-container):not(#nav):not(#sound-volume):not(input)").forEach((element) => {
+    element.onclick = function () {
+        if (currentVolumeMenuOpen == true) {
+            volumesContainer.style.opacity = "0";
+            currentVolumeMenuOpen = false;
+            setTimeout(() => {
+                volumesContainer.style.display = "none";
+            }, 300);
+        }
+    };
+});
 
 chooseSound.onclick = function () {
     if (currentSoundMenuOpen) {
@@ -144,6 +135,11 @@ soundRange.onchange = function () {
     currentAudio.play();
 };
 
+checkbox.onchange = function () {
+    IsDoNotShowAgain = checkbox.checked;
+    localStorage.setItem("IsDoNotShowAgain", IsDoNotShowAgain);
+};
+
 function removeItems(blacklist) {
     const allElements = document.querySelectorAll("body *");
     allElements.forEach((element) => {
@@ -164,7 +160,7 @@ function removeItems(blacklist) {
     });
 }
 
-const functionfirst = function function1() {
+const firstPage = function function1() {
     blinkingEye.style.left = "0px";
     blinkingEye.style.top = "0px";
     blinkingEye.style.margin = "10px";
@@ -423,6 +419,6 @@ const main = function Main() {
 if (IsDoNotShowAgain == true) {
     mainBtn.onclick = main;
 } else {
-    mainBtn.onclick = functionfirst;
+    mainBtn.onclick = firstPage;
 }
 keyButton.onclick = main;
