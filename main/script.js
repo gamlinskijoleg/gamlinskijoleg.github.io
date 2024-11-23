@@ -35,7 +35,7 @@ let currentCounter = 20;
 let currentSoundMenuOpen = false;
 let currentAudio = audio1;
 
-recommendations.onclick = function () {
+recommendations.addEventListener("click", function () {
     popupBox.style.display = "flex";
     setTimeout(() => {
         popupBox.style.opacity = 1;
@@ -46,7 +46,7 @@ recommendations.onclick = function () {
         }, 600);
         popupBox.style.opacity = 0;
     }, 3000);
-};
+});
 
 document.querySelectorAll("body *:not(#sound-pic):not(#change-sound-button):not(#sounds-list):not(li):not(#nav)").forEach((element) => {
     element.onclick = function () {
